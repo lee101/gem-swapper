@@ -1,7 +1,1 @@
-[Multiplication Master](http://www.multiplicationmaster.com "Multiplication Master Maths Game")
-====================
-
-[Multiplication Master](http://www.multiplicationmaster.com "Multiplication Master Maths Game") an educational puzzle game!
-
-
-
+[Gem Swapper](http://gemswapper.app.nz "Match 3 Game") A Match 3 game
