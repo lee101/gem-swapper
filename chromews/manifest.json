@@ -12,8 +12,8 @@
         }
     },
     "icons": {
-        "64": "cross-icon-multiplication-master-no-bg64.png",
-        "128": "multiplication-master-icon-bg128.png"
+        "64": "cross-icon-gem-swapper-no-bg64.png",
+        "128": "gem-swapper-icon-bg128.png"
     },
     "permissions": [
         "unlimitedStorage",

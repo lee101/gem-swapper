@@ -5,20 +5,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Multiplication Master - Maths Madness</title>
+    <title>Gem Swapper - Classic Match 3 Game!</title>
     <meta name="description"
-          content="Multiplication Master, An Utterly Addicting Multiplication Game, Packed With Maths Madness! Train your brain while having a blast!">
+          content="Classic Match 3, fun relaxed gem swapping game!">
 
     <meta name="keywords"
-          content="multiplication games, maths games, number games, puzzle games, learning games for kids">
-    <meta property="og:title" content="Multiplication Master - Maths Madness">
-    <meta property="og:url" content="http://www.multiplicationmaster.com">
+          content="gem swapper, match three">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="http://gemswapper.app.nz">
     <meta property="og:image"
-          content="http://www.multiplicationmaster.com/static/img/multiplication-master-promo-sq-bg256.png">
+          content="http://gemswapper.app.nz/gem_02.png">
     <meta property="og:description"
-          content="Play Multiplication Master For Free! An Utterly Addicting Multiplication Game, Packed With Maths Madness!">
+          content="Classic Match 3, fun relaxed gem swapping game!">
     <meta property="og:type" content="game">
-    <meta property="og:site_name" content="Multiplication Master">
+    <meta property="og:site_name" content="Gem Swapper">
     <meta property="fb:admins" content="337972272904903">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link rel="manifest" href="/manifest.webapp">
@@ -27,40 +27,45 @@
 
     {{ gameon.cssheaders() }}
     {{ macros.cssheaders() }}
+    <style>
+        .gem-iframe {
+            max-width: 545px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
 
     {{ gameon.jsheaders() }}
 
     {{ macros.jsvars() }}
     {{ macros.jsheaders() }}
-
-    <script id="start" type="text/html">
-        {{ views.start() }}
-    </script>
-    <script id="difficulties" type="text/html">
-        {{ views.difficulties() }}
-    </script>
-    <script id="levels" type="text/html">
-        {{ views.levels() }}
-    </script>
-    <script id="level" type="text/html">
-        {{ views.level() }}
-    </script>
-    <script id="options" type="text/html">
-        {{ views.options() }}
-    </script>
-    <script id="donelevel" type="text/html">
-        {{ views.donelevel() }}
-    </script>
 </head>
 <body>
-{{ gameon.templates() }}
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=138831849632195";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="mm-like">
     <div class="fb-like" data-href="http://www.multiplicationmaster.com" data-width="400px"
          data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 </div>
-<div class="mm-background">
-    {{ views.start() }}
-</div>
+
+<iframe src="/index.html" class="gem-iframe" height="100%" seamless="seamless"></iframe>
+
 {% if not noads %}
     <div class="mm-responsivead-bottom navbar-fixed-bottom">
         <button class="mm-hide-btn btn btn-info btn-lg">Hide</button>

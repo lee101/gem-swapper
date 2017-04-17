@@ -1,4 +1,4 @@
-application: multiplication-master
+application: gem-swapper
 version: 1
 runtime: python27
 api_version: 1
@@ -13,10 +13,13 @@ handlers:
   http_headers:
     Content-Type: application/x-web-app-manifest+json
 
-- url: /static/*
+- url: /
+  script: main.app
+- url: /*
   static_dir: static
   http_headers:
     Vary: Accept-Encoding
+
 - url: /transient/*
   static_dir: transient
   http_headers:

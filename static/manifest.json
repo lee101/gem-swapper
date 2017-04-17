@@ -1,0 +1,1 @@
+{"name":"gemswapper","description":"desc - gemswapper","version":"0.0","manifest_version":2,"app":{"background":{"scripts":["background.js"]}},"sandbox":{"pages":["index.html"]},"permissions":["storage"],"icons":{"16":"icon-16.png","128":"icon-128.png"}}

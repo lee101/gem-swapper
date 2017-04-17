@@ -12,9 +12,9 @@
         }
     },
     "icons": {
-        "128": "/static/img/multiplication-master-icon-bg128.png",
-        "64": "/static/img/multiplication-master-icon-bg64.png",
-        "60": "/static/img/multiplication-master-icon-bg60.png"
+        "128": "/static/img/gem-swapper-icon-bg128.png",
+        "64": "/static/img/gem-swapper-icon-bg64.png",
+        "60": "/static/img/gem-swapper-icon-bg60.png"
     },
     "fullscreen": "true",
     "developer": {
